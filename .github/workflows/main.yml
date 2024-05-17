@@ -28,24 +28,24 @@ jobs:
           cache-dependency-path: ./server/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install
-        working-directory: "./server"
+        run: pnpm install --no-frozen-lockfile
+        working-directory: ./server
 
       - name: Run linting
         run: pnpm lint
-        working-directory: "./server"
+        working-directory: ./server
 
       - name: Run code style
         run: pnpm style
-        working-directory: "./server"
+        working-directory: ./server
 
       - name: Run tests
         run: pnpm test:ci
-        working-directory: "./server"
+        working-directory: ./server
 
       - name: Build
         run: pnpm build
-        working-directory: "./server"
+        working-directory: ./server
 
       - name: Coveralls
         if: github.repository == 'socraticprogrammer/youtube-downloader'
