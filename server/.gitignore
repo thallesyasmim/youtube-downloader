@@ -118,3 +118,4 @@ dist
 # SAM
 .aws-sam
 samconfig.toml
+uploads/*
