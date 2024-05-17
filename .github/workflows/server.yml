@@ -66,5 +66,6 @@ jobs:
       - name: Build and push to Docker Registry
         uses: docker/build-push-action@v5
         with:
+          context: ./server
           push: true
           tags: thallesyasmim/youtube-downloader:latest
