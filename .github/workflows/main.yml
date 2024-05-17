@@ -25,18 +25,23 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+        working-directory: "./server"
 
       - name: Run linting
         run: pnpm lint
+        working-directory: "./server"
 
       - name: Run code style
         run: pnpm style
+        working-directory: "./server"
 
       - name: Run tests
         run: pnpm test:ci
+        working-directory: "./server"
 
       - name: Build
         run: pnpm build
+        working-directory: "./server"
 
       - name: Coveralls
         if: github.repository == 'thallesyasmim/youtube-downloader'
