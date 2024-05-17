@@ -1,12 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "lib": [
-      "ES6",
-      "ES7",
-      "ES2020",
-      "ES2021"
-    ],
+    "lib": ["ES6", "ES7", "ES2020", "ES2021"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "module": "commonjs",
@@ -20,42 +15,17 @@
     "removeComments": true,
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types/",
-      "./src/@types/"
-    ],
+    "typeRoots": ["node_modules/@types/", "./src/@types/"],
     "paths": {
-      "@/domain/*": [
-        "./src/domain/*"
-      ],
-      "@/app/*": [
-        "./src/app/*"
-      ],
-      "@/presentation/*": [
-        "./src/presentation/*"
-      ],
-      "@/main/*": [
-        "./src/main/*"
-      ],
-      "@/infra/*": [
-        "./src/infra/*"
-      ],
-      "@/validation/*": [
-        "./src/validation/*"
-      ],
-      "@/shared/*": [
-        "./src/shared/*"
-      ]
+      "@/domain/*": ["./src/domain/*"],
+      "@/app/*": ["./src/app/*"],
+      "@/presentation/*": ["./src/presentation/*"],
+      "@/main/*": ["./src/main/*"],
+      "@/infra/*": ["./src/infra/*"],
+      "@/validation/*": ["./src/validation/*"],
+      "@/shared/*": ["./src/shared/*"]
     }
   },
-  "include": [
-    "./package.json",
-    "src/**/*",
-    "tests/*",
-  ],
-  "exclude": [
-    "node_modules/",
-    "dist/",
-    "coverage/",
-  ]
+  "include": ["./package.json", "src/**/*", "tests/*", "uploads/*"],
+  "exclude": ["node_modules/", "dist/", "coverage/"]
 }
